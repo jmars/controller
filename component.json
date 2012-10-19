@@ -7,7 +7,7 @@
   "dependencies": {
     "jmars/dustjs":"*",
     "component/jquery":"*",
-    "jmars/underscore":"*"
+    "component/underscore":"*"
   },
   "development": {}
 }
