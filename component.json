@@ -4,6 +4,10 @@
   "description": "Simple controller",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "jmars/dustjs":"*",
+    "component/jquery":"*",
+    "jmars/underscore":"*"
+  },
   "development": {}
 }
