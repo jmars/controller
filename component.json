@@ -9,5 +9,8 @@
     "component/jquery":"*",
     "component/underscore":"*"
   },
-  "development": {}
+  "development": {},
+  "scripts": [
+    "index.js"
+  ]
 }
