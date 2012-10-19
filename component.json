@@ -1,0 +1,9 @@
+{
+  "name": "controller",
+  "repo": "jmars/controller",
+  "description": "Simple controller",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {}
+}
