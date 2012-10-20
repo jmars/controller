@@ -70,7 +70,7 @@ Controller = (function() {
     if (node == null) node = this.node;
     (function(__iced_k) {
       if (_this.template != null) {
-        if ((node != null ? node.raw : void 0) != null) node = node.raw;
+        if (node.raw != null) node = node.raw;
         (function(__iced_k) {
           __iced_deferrals = new iced.Deferrals(__iced_k, {
             parent: ___iced_passed_deferral,

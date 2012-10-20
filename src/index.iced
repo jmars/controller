@@ -20,7 +20,7 @@ class Controller
   render: (cb, node) ->
     node ?= @node
     if @template?
-      if node?.raw?
+      if node.raw?
         node = node.raw
       await Dust.render @template, (node.toJSON?() or node), defer err, html
     @el.html html
