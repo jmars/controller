@@ -6,6 +6,11 @@ Emitter = require 'emitter'
 class Controller extends Emitter
   constructor: (node) ->
     @node = node
+  
+  bindings: {}
+  events: {}
+  
+  render: (cb, node) ->
     if @tagName?
       @el = $("<#{@tagName}></#{@tagName}>")
     else
@@ -14,11 +19,6 @@ class Controller extends Emitter
       @el.addClass @className
     if @id?
       @el.attr 'id', @id
-  
-  bindings: {}
-  events: {}
-  
-  render: (cb, node) ->
     node ?= @node
     if @template?
       if node.raw?

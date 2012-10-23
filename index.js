@@ -55,13 +55,6 @@ Controller = (function(_super) {
 
   function Controller(node) {
     this.node = node;
-    if (this.tagName != null) {
-      this.el = $("<" + this.tagName + "></" + this.tagName + ">");
-    } else {
-      this.el = $('<div></div>');
-    }
-    if (this.className != null) this.el.addClass(this.className);
-    if (this.id != null) this.el.attr('id', this.id);
   }
 
   Controller.prototype.bindings = {};
@@ -73,6 +66,13 @@ Controller = (function(_super) {
       _this = this;
     __iced_k = __iced_k_noop;
     ___iced_passed_deferral = iced.findDeferral(arguments);
+    if (this.tagName != null) {
+      this.el = $("<" + this.tagName + "></" + this.tagName + ">");
+    } else {
+      this.el = $('<div></div>');
+    }
+    if (this.className != null) this.el.addClass(this.className);
+    if (this.id != null) this.el.attr('id', this.id);
     if (node == null) node = this.node;
     (function(__iced_k) {
       if (_this.template != null) {
