@@ -56,7 +56,7 @@ Controller = (function(_super) {
   function Controller(node) {
     this.node = node;
     if (this.tagName != null) {
-      this.el = $("<" + tagName + "></" + tagName + ">");
+      this.el = $("<" + this.tagName + "></" + this.tagName + ">");
     } else {
       this.el = $('<div></div>');
     }
@@ -99,7 +99,7 @@ Controller = (function(_super) {
       }
     })(function() {
       var _ref, _ref1;
-      _this.el.html(html);
+      _this.el.empty().html(html);
       _ref = _this.events;
       for (event in _ref) {
         handler = _ref[event];

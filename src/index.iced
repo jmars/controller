@@ -7,7 +7,7 @@ class Controller extends Emitter
   constructor: (node) ->
     @node = node
     if @tagName?
-      @el = $("<#{tagName}></#{tagName}>")
+      @el = $("<#{@tagName}></#{@tagName}>")
     else
       @el = $('<div></div>')
     if @className?
@@ -24,7 +24,7 @@ class Controller extends Emitter
       if node.raw?
         node = node.raw
       await Dust.render @template, (node.toJSON?() or node), defer err, html
-    @el.html html
+    @el.empty().html html
     for event, handler of @events
       [ev, selector...] = event.split ' '
       selector = selector.join(' ')
