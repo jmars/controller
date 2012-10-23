@@ -7,7 +7,8 @@
   "dependencies": {
     "jmars/dustjs":"*",
     "component/jquery":"*",
-    "component/underscore":"*"
+    "component/underscore":"*",
+    "component/emitter"
   },
   "development": {},
   "scripts": [

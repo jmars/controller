@@ -1,8 +1,9 @@
 Dust = require 'dustjs'
 $ = require 'jquery'
 _ = require 'underscore'
+Emitter = require 'emitter'
 
-class Controller
+class Controller extends Emitter
   constructor: (node) ->
     @node = node
     if @tagName?
