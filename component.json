@@ -8,7 +8,8 @@
     "jmars/dustjs":"*",
     "component/jquery":"*",
     "component/underscore":"*",
-    "component/emitter":"*"
+    "jmars/EventEmitter2":"*",
+    "jmars/sockevents":"*"
   },
   "development": {},
   "scripts": [
