@@ -9,7 +9,8 @@
     "component/jquery":"*",
     "component/underscore":"*",
     "jmars/EventEmitter2":"*",
-    "jmars/sockevents":"*"
+    "jmars/sockevents":"*",
+    "jrburke/requirejs":""
   },
   "development": {},
   "scripts": [

@@ -2,7 +2,6 @@ Dust = require 'dustjs'
 $ = require 'jquery'
 _ = require 'underscore'
 {EventEmitter2} = require 'EventEmitter2'
-require = require 'require'
 ServerEvents = require 'sockevents'
 
 Dust.onLoad = (name, out) ->
